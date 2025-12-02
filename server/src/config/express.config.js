@@ -20,7 +20,22 @@ app.use(cors({
         return callback(new Error("Not allowed by CORS"))
     },
     credentials: true
-}))
+}));
+
+// ⭐ FIX FOR OPTIONS PREFLIGHT ⭐
+app.options('*', cors({
+    origin: (origin, callback) => {
+        if (!origin || allowedUrl.includes(origin)) {
+            return callback(null, true);
+        }
+        return callback(new Error("Not allowed by CORS"));
+    },
+    credentials: true
+}));
+
+app.use(helmet({
+    contentSecurityPolicy: false
+}));
 
 app.use(helmet({
     contentSecurityPolicy: false
