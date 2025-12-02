@@ -9,6 +9,7 @@ const app = express();
 
 const allowedUrl = [
     'http://localhost:5173',
+    'https://himalayaproduction.free.nf'
 ]
 
 app.use(cors({
