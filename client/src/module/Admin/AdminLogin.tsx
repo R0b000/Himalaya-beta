@@ -41,7 +41,7 @@ const AdminLogin = () => {
 
         if (response.data.code === 200) {
             message.success('Login Successful! Redirecting to dashboard...');
-            window.location.href = '/admin/dashboard'; 
+            window.location.href = '/v1/admin/dashboard'; 
         } else {
             message.error("Invalid credentials.Please try again.")
         }

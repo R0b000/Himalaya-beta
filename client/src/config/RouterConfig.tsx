@@ -13,7 +13,11 @@ const RouterConfig = () => {
             element: <Homepage />
         },
         {
-            path: "/admin",
+            path: "/v1",
+            element: <Homepage />
+        },
+        {
+            path: "/v1/admin",
             element: (
                 <Suspense fallback={
                     <div className="w-screen h-screen overflow-clip shrink-0 flex items-center justify-center">
@@ -25,7 +29,7 @@ const RouterConfig = () => {
             )
         },
         {
-            path: "/admin/dashboard",
+            path: "/v1/admin/dashboard",
             element: (
                 <Suspense fallback={
                     <div className="w-screen h-screen overflow-clip shrink-0 flex items-center justify-center">
