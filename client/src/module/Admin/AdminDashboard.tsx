@@ -70,8 +70,6 @@ const UploadModal: FC<IUploadModalProps> = ({ open, onClose, onUploadSuccess }) 
             formData.append(backendFieldName, file);
         });
 
-        console.log('dfasdfas', ...formData.entries())
-
         try {
             let response;
             if (uploadType === 'image') {
@@ -343,7 +341,6 @@ const AdminDashboard: FC = () => {
         fetchDashboardData();
     }, [fetchDashboardData]);
 
-    console.log(data)
 
     // --- Handlers ---
     const handleLogout = async () => {
@@ -363,7 +360,6 @@ const AdminDashboard: FC = () => {
     const onDelete = async (type: 'image' | 'video', id: string) => {
         const loadingKey = 'delete' + id;
         message.loading({ content: `Deleting ${type}...`, key: loadingKey, duration: 0 });
-        console.log(id)
         try {
             let response;
             if (type === 'image') {
@@ -387,7 +383,7 @@ const AdminDashboard: FC = () => {
     return (
         <div className="min-h-screen bg-gray-100">
             <header className="bg-white px-6 py-4 border-b border-gray-200 shadow-md">
-                <div className="flex justify-between items-center max-w-7xl mx-auto">
+                <div className="flex justify-center items-center max-w-7xl mx-auto">
                     <div className="flex items-center space-x-2">
                         <AiOutlineAreaChart className="text-3xl text-blue-600" />
                         <h1 className="text-2xl font-bold m-0">
@@ -437,7 +433,7 @@ const AdminDashboard: FC = () => {
                                 <h2 className="text-2xl font-semibold mt-6 mb-4">Images ({data.images.length})</h2>
                                 <div className="bg-white p-6 rounded-lg shadow-md">
                                     {data.images.length > 0 ? (
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
                                             {data.images.map((img: any) => (
                                                 (img.images.map((item: any) => (
                                                     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">

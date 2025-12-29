@@ -87,13 +87,6 @@ const Homepage = () => {
         }
     }, [isV1]);
 
-    const containerStyles = {
-        fontFamily: 'Inter, sans-serif',
-        minHeight: '100vh',
-        backgroundColor: '#0d1223',
-        backgroundImage: 'linear-gradient(135deg, #0d1223 0%, #1c2744 50%, #0d1223 100%)',
-    };
-
     useEffect(() => {
         if (!isLoading) {
             const container = document.getElementById('scroll-container');
@@ -101,26 +94,26 @@ const Homepage = () => {
 
             let isScrolling: any;
             const sections = Array.from(container.children) as HTMLElement[];
-
+            
             let prev = container.scrollTop;
-
+            
             const handleScroll = () => {
                 let curr = container.scrollTop;
-
+                
                 if (curr > prev) setHidden(true);
                 else setHidden(false)
-
+                
                 prev = curr;
-
+                
                 window.clearTimeout(isScrolling)
 
                 isScrolling = setTimeout(() => {
                     const scrollPos = container.scrollTop;
 
                     //Find the closet section
-                    let closet = sections[1];
-                    let minDiff = Math.abs(scrollPos - sections[1].offsetTop);
-
+                    let closet = sections[0];
+                    let minDiff = Math.abs(scrollPos - sections[0].offsetTop);
+                    
                     sections.forEach((section) => {
                         const diff = Math.abs(scrollPos - section.offsetTop);
                         if (diff < minDiff) {
@@ -152,7 +145,7 @@ const Homepage = () => {
                     <img src={Logo} alt="" className="w-[15%] md:w-[5%] animate-pulse" />
                 </div>
                 :
-                <div id="home" style={containerStyles} className="flex flex-col w-full h-auto gap-2">
+                <div id="home" className="flex flex-col w-full h-auto gap-2 containerStyles">
                     {!hidden &&
                         <div className="fixed top-2 flex w-full h-[8vh] rounded-md shrink-0 z-10 items-center justify-center">
                             <div className="flex md:w-[90%] items-center justify-center">
@@ -160,7 +153,7 @@ const Homepage = () => {
                             </div>
                         </div>
                     }
-                    <div id="scroll-container" className="flex flex-col w-full h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
+                    <div id="scroll-container" className="flex flex-col w-full h-screen overflow-y-scroll overflow-x-hidden scroll-smooth snap-y snap-mandatory">
                         <Body data={data} />
                     </div>
 

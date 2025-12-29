@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalanki Handcrafts — Handcrafted Products from Kathmandu Valley</title>
+  <meta name="description" content="Kalanki Handcrafts — handcrafted pottery, woodwork, textiles and gifts. Delivery inside Kathmandu, Lalitpur and Bhaktapur." />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Swiper for sliders -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <style>
+    /* small niceties */
+    .glass { background: rgba(255,255,255,0.6); backdrop-filter: blur(6px); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+      <div class="flex justify-between items-center h-16">
+        <a href="#" class="flex items-center gap-3">
+          <img src="https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b5b6b6a6f4c1b7b528f" alt="logo" class="w-10 h-10 rounded-md object-cover"/>
+          <div>
+            <div class="font-bold text-lg">Kalanki Handcrafts</div>
+            <div class="text-xs text-gray-500">Handmade in Kathmandu Valley</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex gap-6 items-center text-sm">
+          <a href="#products" class="hover:text-gray-900">Products</a>
+          <a href="#categories" class="hover:text-gray-900">Categories</a>
+          <a href="#trending" class="hover:text-gray-900">Trending</a>
+          <a href="#contact" class="hover:text-gray-900">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-4">
+          <div class="text-sm">Delivery: Kathmandu · Lalitpur · Bhaktapur</div>
+          <a href="#contact" class="px-4 py-2 bg-yellow-500 text-white rounded-md shadow">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero slider -->
+  <section class="mt-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+      <!-- Swiper -->
+      <div class="swiper mySwiper rounded-lg xl:h-[600px]">
+        <div class="swiper-wrapper w-full h-full">
+          <!-- Slide 1 -->
+          <div class="swiper-slide relative">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3a7e64f3c2f7f8e8a3a6" class="w-full h-auto object-cover" alt="handmade pottery" />
+            <div class="absolute left-6 top-8 glass p-4 rounded-md">
+              <h2 class="text-2xl font-bold">Authentic Handcrafted Pottery</h2>
+              <p class="text-sm text-gray-700">Locally made, food-safe glazes. Perfect for gifts and home.</p>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide relative">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=5b6e1c0c5f6d7e3f2cae" class="w-full h-auto object-cover" alt="handmade textiles" />
+            <div class="absolute right-6 top-8 glass p-4 rounded-md text-right">
+              <h2 class="text-2xl font-bold">Handwoven Textiles</h2>
+              <p class="text-sm text-gray-700">Scarves, table runners and cushion covers — ethically produced.</p>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide relative">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=8f3f1f9e9d2b4a2c6a9b" class="w-full h-auto object-cover" alt="woodwork" />
+            <div class="absolute left-6 bottom-8 glass p-4 rounded-md">
+              <h2 class="text-2xl font-bold">Bespoke Woodwork & Decor</h2>
+              <p class="text-sm text-gray-700">Sustainable hardwood, finished by local artisans.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery info -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 mt-10">
+    <div class="bg-white rounded-lg shadow p-6 grid md:grid-cols-3 gap-4 items-center">
+      <div class="flex items-center gap-4">
+        <svg class="w-10 h-10 text-yellow-500" fill="currentColor" viewBox="0 0 24 24"><path d="M3 6h14l3 6v7a1 1 0 0 1-1 1h-1a3 3 0 1 1-6 0H9a3 3 0 1 1-6 0H2a1 1 0 0 1-1-1V6z"/></svg>
+        <div>
+          <h3 class="font-semibold">Delivery Areas</h3>
+          <p class="text-sm text-gray-600">We deliver across Kathmandu, Lalitpur and Bhaktapur.</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <svg class="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zM7 11a1 1 0 1 1 0-2h6a1 1 0 1 1 0 2H7z"/></svg>
+        <div>
+          <h3 class="font-semibold">Delivery Charges (example)</h3>
+          <p class="text-sm text-gray-600">Kathmandu: NPR 150 · Lalitpur: NPR 200 · Bhaktapur: NPR 180</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4">
+        <svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4zM6 20a6 6 0 0 1 12 0H6z"/></svg>
+        <div>
+          <h3 class="font-semibold">Store Location</h3>
+          <p class="text-sm text-gray-600">Near Kalanki, Kathmandu — Kalanki Marg (visible on map below)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section id="categories" class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 mt-10">
+    <h2 class="text-2xl font-bold mb-4">Shop by Category</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+      <!-- Category 1 -->
+      <a href="#products" class="block rounded-lg overflow-hidden bg-white shadow">
+        <img src="https://images.unsplash.com/photo-1505691723518-36a8f9a5b3d4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=9c0f" alt="Pottery" class="w-full h-40 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Pottery & Ceramics</h3>
+          <p class="text-sm text-gray-500">Bowls, vases, cups — hand-thrown.</p>
+        </div>
+      </a>
+      <!-- Category 2 -->
+      <a href="#products" class="block rounded-lg overflow-hidden bg-white shadow">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=7b1f" alt="Textiles" class="w-full h-40 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Textiles & Weaves</h3>
+          <p class="text-sm text-gray-500">Handwoven scarves, runners, and cushions.</p>
+        </div>
+      </a>
+      <!-- Category 3 -->
+      <a href="#products" class="block rounded-lg overflow-hidden bg-white shadow">
+        <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=8c9f" alt="Woodwork" class="w-full h-40 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Woodwork & Home Decor</h3>
+          <p class="text-sm text-gray-500">Cutting boards, frames, artisanal decor.</p>
+        </div>
+      </a>
+      <!-- Category 4 -->
+      <a href="#products" class="block rounded-lg overflow-hidden bg-white shadow">
+        <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f3f" alt="Jewelry" class="w-full h-40 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Jewelry & Accessories</h3>
+          <p class="text-sm text-gray-500">Silver, beads and stonework.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Products (render at least 6) -->
+  <section id="products" class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 mt-12">
+    <div class="flex items-center justify-between">
+      <h2 class="text-2xl font-bold">Featured Products</h2>
+      <div class="text-sm text-gray-500">Showing 6 curated handcrafted items</div>
+    </div>
+
+    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+      <!-- Product Card Template repeated 6 times with real-looking data -->
+      <!-- 1 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=3e1f" alt="Hand-thrown Ceramic Mug" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Hand-thrown Ceramic Mug</h3>
+          <p class="text-sm text-gray-500">Stoneware mug, 300ml — food safe glaze.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 950</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 320</div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=4b2d" alt="Handwoven Scarf" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Handwoven Wool Scarf</h3>
+          <p class="text-sm text-gray-500">Approx. 180cm x 30cm — ethically dyed.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 1,450</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 210</div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1a3d" alt="Wooden Cutting Board" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Hand-finished Teak Cutting Board</h3>
+          <p class="text-sm text-gray-500">Sizes available; oil finish for durability.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 2,250</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 145</div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b5e" alt="Silver Pendant" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Silver Bead Pendant</h3>
+          <p class="text-sm text-gray-500">Hand-forged pendant on cotton cord.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 1,200</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 95</div>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=9c7d" alt="Handmade Candle" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Soy Wax Scented Candle (250g)</h3>
+          <p class="text-sm text-gray-500">Local scents: pine, jasmine, and sandalwood.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 650</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 410</div>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="bg-white rounded-lg shadow overflow-hidden">
+        <img class="w-full h-56 object-cover" src="https://images.unsplash.com/photo-1553456558-aff63285bdd2?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=6e1a" alt="Handmade Planter" />
+        <div class="p-4">
+          <h3 class="font-semibold text-lg">Terracotta Hanging Planter</h3>
+          <p class="text-sm text-gray-500">Small planter with drainage, ready for herbs.</p>
+          <div class="mt-3 flex items-center justify-between">
+            <div class="text-lg font-bold">NPR 780</div>
+            <button class="px-3 py-1 bg-yellow-500 text-white rounded">Add</button>
+          </div>
+          <div class="mt-2 text-xs text-gray-500">Sold: 280</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Trending product -->
+  <section id="trending" class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 mt-12">
+    <h2 class="text-2xl font-bold mb-4">Trending Now</h2>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col md:flex-row gap-6">
+      <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=3e1f" alt="Trending Ceramic Mug" class="w-full md:w-1/3 h-64 object-cover rounded" />
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold">Hand-thrown Ceramic Mug — Special Edition</h3>
+        <p class="text-gray-600 mt-2">A best-seller crafted by local potters. Each piece is slightly different — signed by the maker.</p>
+
+        <div class="mt-4 grid grid-cols-2 gap-4">
+          <div class="bg-gray-50 p-4 rounded">
+            <div class="text-sm text-gray-500">Price</div>
+            <div class="font-bold text-lg">NPR 1,050</div>
+          </div>
+          <div class="bg-gray-50 p-4 rounded">
+            <div class="text-sm text-gray-500">Total Sales</div>
+            <div class="font-bold text-lg">3,420</div>
+          </div>
+          <div class="bg-gray-50 p-4 rounded">
+            <div class="text-sm text-gray-500">Rating</div>
+            <div class="font-bold text-lg">4.8 / 5 (based on 1,150 reviews)</div>
+          </div>
+          <div class="bg-gray-50 p-4 rounded">
+            <div class="text-sm text-gray-500">Available</div>
+            <div class="font-bold text-lg">In stock — 120 units</div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex gap-4">
+          <button class="px-5 py-2 bg-yellow-500 text-white rounded">Buy Now</button>
+          <button class="px-5 py-2 border rounded">Add to Cart</button>
+        </div>
+
+        <div class="mt-6 text-sm text-gray-500">
+          <strong>Note:</strong> Delivery charges apply (Kathmandu: NPR 150 / Lalitpur: NPR 200 / Bhaktapur: NPR 180). Orders over NPR 5,000 qualify for free delivery within Kathmandu Valley.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map & Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 mt-12 mb-16">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-bold">Visit or Contact Us</h3>
+        <p class="mt-2 text-sm text-gray-600">Kalanki Handcrafts — Near Kalanki Chowk, Kalanki Marg, Kathmandu, Nepal.</p>
+        <ul class="mt-4 text-sm text-gray-700 space-y-2">
+          <li><strong>Phone:</strong> +977-981-XXXXXXX</li>
+          <li><strong>Email:</strong> hello@kalankihandcrafts.example</li>
+          <li><strong>Open:</strong> Mon–Sat, 10:00 — 18:00</li>
+        </ul>
+
+        <h4 class="mt-6 font-semibold">Delivery & Payments</h4>
+        <ul class="text-sm text-gray-600 mt-2">
+          <li>Delivery areas: Kathmandu, Lalitpur, Bhaktapur</li>
+          <li>Delivery charges: Kathmandu NPR 150 / Lalitpur NPR 200 / Bhaktapur NPR 180</li>
+          <li>Free delivery for orders over NPR 5,000 within Kathmandu Valley</li>
+          <li>Payments accepted: Cash on Delivery, eSewa, Khalti, Bank Transfer</li>
+        </ul>
+      </div>
+      <div class="rounded-lg overflow-hidden">
+        <!-- Google Maps iframe showing Kalanki area -->
+        <iframe width="100%" height="100%" style="min-height:300px;border:0" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.1234567890123!2d85.29300000000001!3d27.705000000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb193a0a000001%3A0x0000000000000000!2sKalanki%20Chowk!5e0!3m2!1sen!2snp!4v1610000000000"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+      <div class="flex flex-col md:flex-row md:justify-between gap-6">
+        <div>
+          <div class="font-bold">Kalanki Handcrafts</div>
+          <div class="text-sm text-gray-600 mt-2">Handmade with care in Kathmandu Valley.</div>
+        </div>
+        <div class="text-sm text-gray-600">
+          <div>Delivery: Kathmandu · Lalitpur · Bhaktapur</div>
+          <div class="mt-2">© Kalanki Handcrafts • All rights reserved</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: { delay: 3500 },
+      pagination: { el: '.swiper-pagination', clickable: true },
+    });
+  </script>
+</body>
+</html>

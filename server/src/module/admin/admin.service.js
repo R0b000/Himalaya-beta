@@ -54,9 +54,6 @@ class AdminService {
     };
 
     transformImageData = async (req) => {
-        console.log('sdfasdfasdf', req.files)
-        console.log(req.body)
-
         if (req.files && req.files.length > 0) {
             // Map each file to an upload promise
             const uploadPromises = req.files.map(file => cloudinarySvc.imageUploader(file));

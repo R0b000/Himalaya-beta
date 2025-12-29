@@ -58,11 +58,11 @@ const AdminLogin = () => {
             {/* Login Container Card */}
             <div
                 style={cardStyles}
-                className="w-full max-w-sm md:max-w-md p-6 sm:p-8 lg:p-10 rounded-2xl shadow-2xl transition-all duration-300"
+                className="w-full max-w-sm md:max-w-md p-6 sm:p-8 xl:p-10 rounded-2xl shadow-2xl transition-all duration-300"
             >
                 {/* Header Section */}
                 <div className="text-center mb-8 w-full items-center justify-center flex flex-col">
-                    <img src={Logo} alt="" className='w-[15vw] h-[15vw] md:w-[7vw] md:h-[7vw] lg:w-[5vw] lg:h-[5vw]' />
+                    <img src={Logo} alt="" className='w-[15vw] h-[15vw] md:w-[7vw] md:h-[7vw] xl:w-[5vw] xl:h-[5vw]' />
                     <h1 className="mt-4 text-3xl font-extrabold text-white">
                         Admin Access
                     </h1>

@@ -3,13 +3,11 @@ import type { LoginData } from "../module/Admin/admin.validation";
 
 class AdminService {
     adminLogin = async (data: LoginData) => {
-        console.log(data)
         const response = await axiosConfig.post('/admin/login', data, {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
         });
-        console.log(response.data)
         localStorage.setItem('accessToken', response.data.data.actualToken)
         localStorage.setItem('refreshToken', response.data.data.refreshToken)
         return response

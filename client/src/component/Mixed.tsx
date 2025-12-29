@@ -22,7 +22,7 @@ const Mixed = () => {
     return (
         <>
             {/* WHY CHOOSE US */}
-            <div className="flex flex-col items-center py-5 p-4 gap-2 ">
+            <div className="flex flex-col items-center py-5 p-4 gap-2">
                 <h2 className="text-2xl font-semibold">WHY CHOOSE US?</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-[95vw] md:w-[80vw] text-black">
@@ -53,7 +53,7 @@ const Mixed = () => {
                     {teamMembers.map((member, idx) => (
                         <div
                             key={idx}
-                            className="group bg-white p-2 rounded-2xl shadow-lg w-full max-w-sm cursor-pointer text-center transition duration-500 hover:scale-105 hover:shadow-xl justify-between py-5"
+                            className="group bg-white p-2 rounded-2xl shadow-lg w-full max-w-sm cursor-pointer text-center transition duration-500 hover:scale-105 hover:shadow-xl justify-center py-5"
                         >
                             <div className="h-36 w-36 mx-auto">
                                 <img src={Photo} alt="" />

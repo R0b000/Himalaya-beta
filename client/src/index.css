@@ -3,3 +3,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+.containerStyles {
+  font-family: Inter, sans-serif;
+  min-height: 100vh;
+  background-color: #0d1223;
+  background-image: linear-gradient(135deg, #0d1223 0%, #1c2744 50%, #0d1223 100%);
+}

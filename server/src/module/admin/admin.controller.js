@@ -121,7 +121,6 @@ class AdminController {
     uploadImage = async (req, res, next) => {
         try {
             const transformedData = await adminSvc.transformImageData(req);
-            console.log(transformedData)
 
             const response = await adminSvc.saveImage(transformedData);
 
@@ -144,7 +143,6 @@ class AdminController {
 
     listUserData = async (req, res, next) => {
         try {
-            console.log('check: I am at listing.')
             const {imageData, videoData} = await adminSvc.listData();
 
             res.json({

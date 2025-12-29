@@ -36,7 +36,7 @@ const Banner = (data: any) => {
                     </div>
                 )}
 
-                <div className="flex absolute bottom-1/2 translate-y-1/2 left-1/2 -translate-x-1/2 flex-col items-center justify-center text-center rounded-md w-full md:max-w-2xl lg:max-w-4xl py-5 gap-2 p-2 bg-yellow-200">
+                <div className="flex absolute bottom-1/2 translate-y-1/2 left-1/2 -translate-x-1/2 flex-col items-center justify-center text-center rounded-md w-full md:max-w-2xl xl:max-w-4xl py-5 gap-2 p-2 bg-yellow-200">
                     <h1 className="text-3xl md:text-4xl font-bold">
                         Grow Your Business With Digital Power
                     </h1>

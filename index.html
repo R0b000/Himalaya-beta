@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index Securities | Trusted Brokerage & Investment Partner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Index Securities: Licensed brokerage offering equity trading, investment advisory, and portfolio management with transparent pricing and expert insights.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom Variables */
+        :root {
+            --gold: #b88a42;
+            /* Slightly richer gold */
+            --cream: #fbfbfb;
+            /* Very light cream */
+            --dark: #1e3a8a;
+            /* Deep blue for a trustworthy feel */
+            --light-bg: #f5f5f5;
+            /* Light grey for sections */
+        }
+
+        /* Applying the new dark variable to text that was previously dark gray */
+        .text-dark {
+            color: var(--dark);
+        }
+
+        /* Slide for Hero - kept for visual effect */
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            /* Slower transition for a more refined feel */
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        /* Custom utility for the button's hover state */
+        .btn-gold {
+            background-color: var(--gold);
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-gold:hover {
+            background-color: #a07839;
+            /* Darker gold on hover */
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--cream)] text-gray-800 antialiased">
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-[var(--dark)] tracking-wider">Index Securities</h1>
+            <nav class="hidden md:flex gap-8 text-gray-700 font-medium" aria-label="Main Navigation">
+                <a href="#" class="hover:text-[var(--gold)] transition duration-150">Home</a>
+                <a href="#about" class="hover:text-[var(--gold)] transition duration-150">About</a>
+                <a href="#services" class="hover:text-[var(--gold)] transition duration-150">Services</a>
+                <a href="#products" class="hover:text-[var(--gold)] transition duration-150">Products</a>
+                <a href="#research" class="hover:text-[var(--gold)] transition duration-150">Research</a>
+                <a href="#contact" class="hover:text-[var(--gold)] transition duration-150">Contact</a>
+            </nav>
+            <a href="#"
+                class="px-6 py-2 btn-gold rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition">
+                Open Account
+            </a>
+        </div>
+    </header>
+
+    <section class="relative h-[95vh] xl:h-[80vh] overflow-hidden" role="region" aria-label="Investment Banner Slider">
+        <div class="slide active" role="img" aria-label="Chart showing upward market trend">
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3" class="w-full h-full object-cover"
+                alt="Stock market graph data on a screen">
+        </div>
+        <div class="slide" role="img" aria-label="Advisors discussing financial strategy">
+            <img src="https://images.unsplash.com/photo-1569025690938-a00729c9e1f9" class="w-full h-full object-cover"
+                alt="Group of people discussing strategy around a table">
+        </div>
+        <div class="slide" role="img" aria-label="Financial documents and calculator">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="w-full h-full object-cover"
+                alt="Desktop with financial documents and calculator">
+        </div>
+
+        <div class="absolute inset-0 bg-[var(--dark)]/70"></div>
+        <div class="absolute inset-0 flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 text-white">
+                <p class="text-[var(--gold)] font-semibold mb-3 tracking-widest uppercase text-sm">Your Trusted
+                    Investment Partner</p>
+                <h2 class="text-4xl sm:text-5xl xl:text-6xl font-extrabold leading-tight shadow-text">
+                    Smart, Secure & Confident Investing
+                </h2>
+                <p class="mt-6 text-lg sm:text-xl max-w-3xl font-light">
+                    A licensed, reliable brokerage firm providing transparent trading,
+                    expert advisory, and robust long-term investment solutions.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#"
+                        class="px-8 py-3 btn-gold rounded-full font-semibold shadow-xl hover:scale-[1.03] transition duration-300">
+                        Start Investing Today
+                    </a>
+                    <a href="#"
+                        class="px-8 py-3 border border-white/50 bg-white/10 rounded-full font-semibold hover:bg-white/20 transition duration-300">
+                        Speak to Advisor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl font-extrabold text-[var(--dark)]">45,000+</p>
+                <p class="text-sm text-gray-600 uppercase tracking-wider mt-1">Active Clients</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-[var(--dark)]">NPR 12.5B+</p>
+                <p class="text-sm text-gray-600 uppercase tracking-wider mt-1">Assets Under Custody</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-[var(--dark)]">15 Years</p>
+                <p class="text-sm text-gray-600 uppercase tracking-wider mt-1">Market Experience</p>
+            </div>
+            <div>
+                <p class="text-3xl font-extrabold text-[var(--dark)]">99.99%</p>
+                <p class="text-sm text-gray-600 uppercase tracking-wider mt-1">Platform Reliability</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-[var(--cream)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-4 text-[var(--dark)]">Our Core Services</h3>
+            <p class="text-center text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                Tailored solutions designed to meet the diverse needs of modern investors.
+            </p>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[var(--gold)] transform hover:scale-[1.02] transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[var(--gold)] mb-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Equity Trading</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Execute stock trades swiftly on major exchanges with
+                        competitive brokerage rates.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[var(--gold)] transform hover:scale-[1.02] transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[var(--gold)] mb-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 4h2m-2 4h2m-2 4h2m-2 4h2M5 8h2m-2 4h2m-2 4h2" />
+                    </svg>
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Investment Advisory</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Get personalized, goal-oriented financial planning from
+                        certified market experts.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[var(--gold)] transform hover:scale-[1.02] transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[var(--gold)] mb-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6V4m0 2a2 2 0 100 4m0-4h11v5H1V6h3m7 0h-4M7 12h10v8H7v-8z" />
+                    </svg>
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Portfolio Management</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Delegate the management of your diversified portfolio for
+                        optimal risk-adjusted returns.</p>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-[var(--gold)] transform hover:scale-[1.02] transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[var(--gold)] mb-4" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 19V6l12-1V19L9 19zM19 19L21 21M9 19L5 23" />
+                    </svg>
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Market Research</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Access deep, independent research reports and technical
+                        analysis to inform your decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[var(--light-bg)] py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-14 text-[var(--dark)]">Your 4 Steps to Financial Growth</h3>
+            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 text-center">
+
+                <div class="relative">
+                    <span
+                        class="absolute -top-6 left-1/2 transform -translate-x-1/2 h-10 w-10 flex items-center justify-center bg-[var(--dark)] text-white rounded-full font-bold text-xl shadow-lg">1</span>
+                    <div class="pt-6">
+                        <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b"
+                            class="rounded-xl mb-4 shadow-md h-40 w-full object-cover"
+                            alt="Illustrative image for creating an account">
+                        <p class="font-bold text-lg text-[var(--dark)] mt-2">Create Account Online</p>
+                        <p class="text-sm text-gray-600">Quick and easy paperless application.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span
+                        class="absolute -top-6 left-1/2 transform -translate-x-1/2 h-10 w-10 flex items-center justify-center bg-[var(--dark)] text-white rounded-full font-bold text-xl shadow-lg">2</span>
+                    <div class="pt-6">
+                        <img src="https://images.unsplash.com/photo-1556155092-8707de31f9c4"
+                            class="rounded-xl mb-4 shadow-md h-40 w-full object-cover"
+                            alt="Illustrative image for identity verification">
+                        <p class="font-bold text-lg text-[var(--dark)] mt-2">Complete Verification</p>
+                        <p class="text-sm text-gray-600">Secure KYC/AML digital verification.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span
+                        class="absolute -top-6 left-1/2 transform -translate-x-1/2 h-10 w-10 flex items-center justify-center bg-[var(--dark)] text-white rounded-full font-bold text-xl shadow-lg">3</span>
+                    <div class="pt-6">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e" class="class="
+                            rounded-xl mb-4 shadow-md h-40 w-full object-cover"
+                            alt="Illustrative image for funding an account">
+                        <p class="font-bold text-lg text-[var(--dark)] mt-2">Fund Your Portfolio</p>
+                        <p class="text-sm text-gray-600">Transfer funds instantly using local banks.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <span
+                        class="absolute -top-6 left-1/2 transform -translate-x-1/2 h-10 w-10 flex items-center justify-center bg-[var(--dark)] text-white rounded-full font-bold text-xl shadow-lg">4</span>
+                    <div class="pt-6">
+                        <img src="https://images.unsplash.com/photo-1642543348745-03b1219733d9"
+                            class="rounded-xl mb-4 shadow-md h-40 w-full object-cover"
+                            alt="Illustrative image for starting to trade">
+                        <p class="font-bold text-lg text-[var(--dark)] mt-2">Start Investing</p>
+                        <p class="text-sm text-gray-600">Access markets and place your first trade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-[var(--cream)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-14 text-[var(--dark)]">Why Index Securities is Your Best Choice
+            </h3>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <h4 class="font-bold text-2xl mb-3 text-[var(--dark)]">Fully Licensed & Regulated</h4>
+                    <p class="text-gray-600">
+                        We are registered and compliant with the Securities Board of Nepal (SEBON), ensuring the highest
+                        standard of investor protection and operational integrity.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <h4 class="font-bold text-2xl mb-3 text-[var(--dark)]">Dedicated Advisory Team</h4>
+                    <p class="text-gray-600">
+                        Our seasoned analysts and financial advisors provide timely, data-driven research and
+                        personalized guidance across all asset classes.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+                    <h4 class="font-bold text-2xl mb-3 text-[var(--dark)]">Unwavering Transparency</h4>
+                    <p class="text-gray-600">
+                        Enjoy a clear, competitive fee structure with zero hidden costs. All trades and reports are
+                        available in real-time, fostering trust and clarity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[var(--light-bg)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-14 text-[var(--dark)]">What Our Clients Say</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[var(--gold)]">
+                    <p class="text-lg italic text-gray-700">"The trading platform is incredibly fast and reliable. Index
+                        Securities has made my investment tracking seamless and efficient. Highly recommend their
+                        services."</p>
+                    <footer class="mt-4 font-semibold text-[var(--dark)]">— Manoj P., Kathmandu</footer>
+                </blockquote>
+                <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[var(--gold)]">
+                    <p class="text-lg italic text-gray-700">"As a beginner, the advisory team provided excellent,
+                        easy-to-understand guidance. I felt supported throughout my first investment cycle."</p>
+                    <footer class="mt-4 font-semibold text-[var(--dark)]">— Sunita R., Pokhara</footer>
+                </blockquote>
+                <blockquote class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-[var(--gold)]">
+                    <p class="text-lg italic text-gray-700">"Transparent pricing and deep market research are what set
+                        them apart. I trust their analysis completely for my long-term portfolio decisions."</p>
+                    <footer class="mt-4 font-semibold text-[var(--dark)]">— Ramesh K., Butwal</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-14 text-[var(--dark)]">Our Investment Products</h3>
+
+            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div
+                    class="border border-gray-200 p-6 rounded-xl shadow-md hover:border-[var(--dark)] transition duration-200">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Stocks & Equities</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Direct ownership in listed companies. Ideal for capital
+                        appreciation.</p>
+                </div>
+
+                <div
+                    class="border border-gray-200 p-6 rounded-xl shadow-md hover:border-[var(--dark)] transition duration-200">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Mutual Funds</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Professionally managed funds offering instant diversification.
+                    </p>
+                </div>
+
+                <div
+                    class="border border-gray-200 p-6 rounded-xl shadow-md hover:border-[var(--dark)] transition duration-200">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Primary Offerings (IPO/FPO)</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Seamless application for new shares hitting the market.</p>
+                </div>
+
+                <div
+                    class="border border-gray-200 p-6 rounded-xl shadow-md hover:border-[var(--dark)] transition duration-200">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Corporate Bonds</h4>
+                    <p class="mt-2 text-gray-600 text-sm">Fixed-income instruments for stable, periodic returns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-[#f9f9f7]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <p class="text-[var(--gold)] font-semibold mb-3 tracking-widest uppercase text-sm">Performance.
+                    Security. Insight.</p>
+                <h3 class="text-4xl font-bold mb-6 text-[var(--dark)]">Index Trading Terminal Pro</h3>
+                <p class="text-gray-700 mb-6 text-lg">
+                    Our proprietary platform delivers institutional-grade tools to every investor. It is built for
+                    speed, security, and provides all the data you need in a single, intuitive dashboard.
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-medium">Ultra-low latency real-time market data</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-medium">Advanced charting tools and technical indicators</span>
+                    </li>
+                    <li class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="font-medium">Military-grade data encryption and security</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-200 h-96 rounded-xl flex flex-col items-center justify-center text-center text-gray-500 border border-gray-300 shadow-xl"
+                role="img" aria-label="Screenshot of the Index Trading Terminal Pro dashboard">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bWFya2V0fHx8fHx8MTY5NDE4MDAwMQ&ixlib=rb-4.0.3&q=80&w=600"
+                    class="h-64 w-full object-cover rounded-xl mb-4" alt="Dummy stock market dashboard">
+                <p class="text-gray-700">Interactive charts, watchlists, and portfolio summaries displayed in a sleek,
+                    user-friendly interface.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="research" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold text-center mb-14 text-[var(--dark)]">In-Depth Research & Insights</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Daily Market Briefing</h4>
+                    <p class="mt-2 text-gray-600">
+                        A concise summary of the previous day's trading, key global triggers, and forecasts for the
+                        current day's market movements.
+                    </p>
+                    <a href="#" class="text-[var(--gold)] font-semibold mt-3 inline-block hover:underline">Read Latest
+                        &rarr;</a>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Sector & Company Analysis</h4>
+                    <p class="mt-2 text-gray-600">
+                        Detailed fundamental and technical reports on specific companies and industry sectors for
+                        long-term conviction.
+                    </p>
+                    <a href="#" class="text-[var(--gold)] font-semibold mt-3 inline-block hover:underline">View Reports
+                        &rarr;</a>
+                </div>
+
+                <div class="p-6 border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <h4 class="font-bold text-xl text-[var(--dark)]">Investment Education Hub</h4>
+                    <p class="mt-2 text-gray-600">
+                        Exclusive courses and articles for all skill levels—from understanding dividends to mastering
+                        risk management.
+                    </p>
+                    <a href="#" class="text-[var(--gold)] font-semibold mt-3 inline-block hover:underline">Start
+                        Learning &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[var(--gold)] text-white py-16 shadow-inner">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 xl:px-8">
+            <h3 class="text-4xl font-bold">Ready to Start Building Wealth?</h3>
+            <p class="mt-4 text-xl font-light">
+                Open an Index Securities account today to invest with confidence, transparency, and the support of
+                expert advisors.
+            </p>
+            <a href="#"
+                class="inline-block mt-8 px-10 py-4 bg-white text-[var(--dark)] rounded-full text-lg font-bold shadow-2xl hover:bg-gray-100 transform hover:scale-105 transition duration-300">
+                Open Account Now
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400" id="contact">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 xl:px-8 py-14 grid md:grid-cols-5 gap-10">
+
+            <div class="md:col-span-2">
+                <h4 class="text-white text-2xl font-extrabold mb-4">Index Securities</h4>
+                <p class="text-sm pr-10">
+                    A leading licensed and regulated brokerage firm dedicated to empowering
+                    investors with secure trading platforms and expert financial guidance in Nepal.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Company</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-[var(--gold)]">About Us</a></li>
+                    <li><a href="#" class="hover:text-[var(--gold)]">Careers</a></li>
+                    <li><a href="#research" class="hover:text-[var(--gold)]">Research & Media</a></li>
+                    <li><a href="#contact" class="hover:text-[var(--gold)]">Branch Locations</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-[var(--gold)]">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-[var(--gold)]">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-[var(--gold)]">Risk Disclosure</a></li>
+                    <li><a href="#" class="hover:text-[var(--gold)]">Compliance</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Connect</h4>
+                <p class="text-sm">Head Office: Kathmandu, Nepal</p>
+                <p class="text-sm mt-2">Email: <a href="mailto:support@indexsecurities.com"
+                        class="hover:text-[var(--gold)]">support@indexsecurities.com</a></p>
+                <p class="text-sm">Phone: <a href="tel:+9779812345678"
+                        class="hover:text-[var(--gold)]">+977-981-234-5678</a></p>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 text-center py-6 text-xs px-4 sm:px-6 xl:px-8">
+            <p class="max-w-5xl mx-auto">
+                **Disclaimer:** Investments in the securities market are subject to market risks. Read all related
+                documents and prospectuses carefully before investing. Past performance is not indicative of future
+                results.
+            </p>
+            <p class="mt-3">
+                © 2025 Index Securities Pvt. Ltd. All rights reserved. SEBON License No. 123/2025.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        function nextSlide() {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }
+
+        // Use a clearer variable for the interval ID
+        const sliderInterval = setInterval(nextSlide, 5000); // Increased time to 5 seconds
+
+        // Optional: Pause on hover
+        const heroSection = document.querySelector('.relative.h-\[95vh\]');
+        heroSection.addEventListener('mouseover', () => clearInterval(sliderInterval));
+        heroSection.addEventListener('mouseout', () => sliderInterval = setInterval(nextSlide, 5000));
+    </script>
+
+</body>
+
+</html>

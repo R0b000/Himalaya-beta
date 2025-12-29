@@ -2,12 +2,14 @@ const FAQ = () => {
     return (
         <>
             {/* FAQ SECTION */}
-            <div className="flex flex-col items-center py-5 p-4 w-full gap-2" id="faq">
-                <h2 className="text-2xl font-semibold">FAQ</h2>
-                <p className="text-center text-text w-[90%] md:w-[60%]">
-                    This section answers common questions to help you understand our services,
-                    pricing, and support process without needing to contact us directly.
-                </p>
+            <div className="flex flex-col items-center justify-center h-full py-10 p-4 w-full gap-2" id="faq">
+                <div className="flex flex-col gap-5 w-full h-auto items-center justify-center">
+                    <h2 className="text-2xl font-semibold">FAQ</h2>
+                    <p className="text-center text-text w-[90%] md:w-[60%]">
+                        This section answers common questions to help you understand our services,
+                        pricing, and support process without needing to contact us directly.
+                    </p>
+                </div>
                 <div className="w-[95vw] md:w-[80vw] flex flex-col gap-3 text-black">
                     {[
                         { q: "How long does it take to see results?", a: "Most clients see improvements within 2–4 weeks." },
