@@ -20,7 +20,7 @@ const RouterConfig = () => {
             path: "/v1/admin",
             element: (
                 <Suspense fallback={
-                    <div className="w-screen h-screen overflow-clip shrink-0 flex items-center justify-center">
+                    <div className="w-screen h-dvh overflow-clip shrink-0 flex items-center justify-center">
                         <img src={Logo} alt="" className="w-[15%] md:w-[5%] animate-pulse" />
                     </div>
                 }>
@@ -32,7 +32,7 @@ const RouterConfig = () => {
             path: "/v1/admin/dashboard",
             element: (
                 <Suspense fallback={
-                    <div className="w-screen h-screen overflow-clip shrink-0 flex items-center justify-center">
+                    <div className="w-screen h-dvh overflow-clip shrink-0 flex items-center justify-center">
                         <img src={Logo} alt="" className="w-[15%] md:w-[5%] animate-pulse" />
                     </div>
                 }>

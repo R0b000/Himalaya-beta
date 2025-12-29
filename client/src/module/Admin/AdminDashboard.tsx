@@ -381,7 +381,7 @@ const AdminDashboard: FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-dvh bg-gray-100">
             <header className="bg-white px-6 py-4 border-b border-gray-200 shadow-md">
                 <div className="flex justify-center items-center max-w-7xl mx-auto">
                     <div className="flex items-center space-x-2">

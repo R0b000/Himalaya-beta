@@ -20,7 +20,7 @@ const Team = () => {
     ];
 
     return (
-        < div id="team" className="flex flex-col justify-center items-center p-4 py-5 gap-2 snap-start min-h-screen" >
+        < div id="team" className="flex flex-col justify-center items-center p-4 py-5 gap-2 snap-start min-h-dvh" >
             <h2 className="text-2xl font-bold">MEET THE TEAM</h2>
             <p className="text-center w-[90%] md:w-[70%] text-white">
                 Our creative professionals combine passion, skill, and experience to deliver exceptional results.

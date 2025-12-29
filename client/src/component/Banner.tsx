@@ -21,12 +21,12 @@ const Banner = (data: any) => {
 
     return (
         <>
-            <div className='relative snap-start flex w-full h-full overflow-hidden rounded-md border border-gray-300 drop-shadow-lg'>
+            <div className={`relative snap-start flex w-full h-dvh overflow-hidden rounded-md border border-gray-300 drop-shadow-lg`}>
                 {images.length > 0 ? (
                     <div className='flex min-w-full h-full duration-500' style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {images.map((items: any, index: number) => (
                             <div key={index} className='flex min-w-full h-full items-center justify-center overflow-hidden'>
-                                <img src={items.secure_url} alt="banner" className='object-cover h-screen w-auto' />
+                                <img src={items.secure_url} alt="banner" className='object-cover h-dvh w-auto' />
                             </div>
                         ))}
                     </div>

@@ -122,7 +122,7 @@ const Homepage = () => {
                         }
                     })
 
-                    const threshold = window.innerHeight * 0.3;
+                    const threshold = window.innerHeight * 50;
                     if (minDiff > threshold) {
                         container.scrollTo({
                             top: closet.offsetTop,
@@ -141,7 +141,7 @@ const Homepage = () => {
     return (
         <>
             {isLoading ?
-                <div className="w-screen h-screen overflow-clip shrink-0 flex items-center justify-center">
+                <div className="w-screen h-dvh overflow-clip shrink-0 flex items-center justify-center">
                     <img src={Logo} alt="" className="w-[15%] md:w-[5%] animate-pulse" />
                 </div>
                 :
@@ -153,7 +153,7 @@ const Homepage = () => {
                             </div>
                         </div>
                     }
-                    <div id="scroll-container" className="flex flex-col w-full h-screen overflow-y-scroll overflow-x-hidden scroll-smooth snap-y snap-mandatory">
+                    <div id="scroll-container" className={`flex flex-col w-full h-dvh overflow-y-scroll overflow-x-hidden scroll-smooth snap-y snap-mandatory`}>
                         <Body data={data} />
                     </div>
 

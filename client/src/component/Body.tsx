@@ -12,32 +12,32 @@ import Testimonials from './Testimonials';
 const Body = (data: any) => {
     return (
         <>
-            <section className='flex snap-start min-h-screen gap-2 items-center justify-center'>
+            <section className='flex snap-start min-h-dvh gap-2 items-center justify-center'>
                 <Banner data={data} />
             </section>
 
             {/* SERVICES */}
-            <section className='flex flex-col snap-start min-h-screen gap-2 items-center justify-center'>
+            <section className='flex flex-col snap-start min-h-dvh gap-2 items-center justify-center'>
                 <Service />
             </section>
 
-            <section className='flex-col snap-start gap-2 md:min-h-screen items-center justify-center hidden md:block'>
+            <section className='flex-col snap-start gap-2 md:min-h-dvh items-center justify-center hidden md:block'>
                 <Mixed />
             </section>
 
-            <section className='flex flex-col snap-start gap-2 min-h-screen items-center justify-center md:hidden py-10'>
+            <section className='flex flex-col snap-start gap-2 min-h-dvh items-center justify-center md:hidden py-10'>
                 <Choose />
             </section>
 
-            <section className='flex flex-col snap-start gap-2 min-h-screen items-center justify-center md:hidden py-10'>
+            <section className='flex flex-col snap-start gap-2 min-h-dvh items-center justify-center md:hidden py-10'>
                 <Team />
             </section>
 
-            <section className='flex flex-col snap-start gap-2 min-h-screen items-center justify-center md:hidden py-10'>
+            <section className='flex flex-col snap-start gap-2 min-h-dvh items-center justify-center md:hidden py-10'>
                 <Testimonials />
             </section>
 
-            <section className='flex flex-col snap-start min-h-screen items-center justify-center'>
+            <section className='flex flex-col snap-start min-h-dvh items-center justify-center'>
                 {/* PORTFOLIO */}
                 <div id="portfolio" className="flex flex-col p-4 py-5 gap-2 items-center">
                     <h2 className="text-2xl font-semibold">PORTFOLIO</h2>
@@ -60,16 +60,16 @@ const Body = (data: any) => {
                 </div>
             </section>
 
-            <section className='flex flex-col gap-2 snap-start min-h-screen items-center justify-center'>
+            <section className='flex flex-col gap-2 snap-start min-h-dvh items-center justify-center'>
                 <FAQ />
             </section>
 
-            <section className='flex flex-col min-h-screen snap-start items-center justify-center'>
+            <section className='flex flex-col min-h-dvh snap-start items-center justify-center'>
                 <Contact />
             </section>
 
             {/* FOOTER */}
-            <section className='flex flex-col items-center justify-center min-h-screen snap-start'>
+            <section className='flex flex-col items-center justify-center min-h-dvh snap-start'>
                 <div className="flex flex-col items-center justify-center w-full bg-gray-900 text-white py-6 gap-2 snap-start xl:min-h-full">
                     <p>© 2025 Himalaya Production. All rights reserved.</p>
                     <div className="flex gap-4 mt-2">

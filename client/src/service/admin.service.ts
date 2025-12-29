@@ -44,6 +44,7 @@ class AdminService {
 
     homePageData = async () => {
         const response = await axiosConfig.get('/admin/home');
+        console.log(response.data.data)
         return response;
     }
 }
